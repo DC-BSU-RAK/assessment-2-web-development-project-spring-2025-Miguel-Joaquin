@@ -1,6 +1,55 @@
+/* Code for heroes.html*/
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.hero-left {
+  text-align: center;
+}
+
+.hero-image-detail {
+  width: 100%;
+  height: 80%;
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+.hero-right {
+  color: #f9d342;
+}
+
+.hero-abilities {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;  /* Align content from top to bottom */
+  height: 100%;
+}
+
+.ability {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Ensure that the ability title and description are aligned at the top */
+  margin-bottom: 1rem;
+}
+
+.ability h4 {
+  font-size: 1.25rem;
+  color: #f9d342;
+}
+
+.ability p {
+  color: #d4d4d4;
+}
+
 /* ===========================
    Base Reset & Layout
 =========================== */
+
 * {
     margin: 0;
     padding: 0;
