@@ -1,3 +1,55 @@
+/* Code for my reviews.html*/
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.review-box {
+  background-color: #1f2937;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.review-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.rating-star {
+  color: #f9d342;
+  font-size: 1.25rem;
+}
+
+.star {
+  font-size: 1.25rem;
+}
+
+.review-box p {
+  color: #d4d4d4;
+  margin-bottom: 1rem;
+}
+
+.review-box strong {
+  color: #f9d342;
+}
+
+.review-text {
+  color: #e0e0e0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
 /* Code for heroes.html*/
 
 .hero-grid {
