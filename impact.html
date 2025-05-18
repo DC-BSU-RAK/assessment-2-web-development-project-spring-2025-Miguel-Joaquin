@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Game Impact | Mobile Legends Hub</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Mobile Legends Hub</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header>
     <div class="logo-container">
-      <img src="https://upload.wikimedia.org/wikipedia/en/a/a0/Mobile_Legends_Bang_Bang_2025_logo.png" alt="Mobile Legends: Bang Bang Logo" class="logo" />
-      <div class="site-info"> 
-        <h1 class="mlbb-gradient-text">Mobile Legends Hub</h1>
-        <p>Exploring the influence of MLBB across gaming and culture</p>
+      <img src="https://upload.wikimedia.org/wikipedia/en/a/a0/Mobile_Legends_Bang_Bang_2025_logo.png" alt="Mobile Legends: Bang Bang Logo" class="logo">
+      <div class="site-info">
+        <h1> Mobile Legends Hub</h1>
+        <p>Your ultimate source for heroes, impact, and community from the world of Mobile Legends: Bang Bang</p>
       </div>
     </div>
   </header>
@@ -24,14 +23,14 @@
       <li><a href="game.html">Game Overview</a></li>
       <li><a href="heroes.html">Heroes</a></li>
       <li><a href="reviews.html">Reviews</a></li>
-      <li><a href="impact.html" aria-current="page">Impact</a></li>
+      <li><a href="impact.html">Impact</a></li>
     </ul>
   </nav>
 
   <main>
 
     <section>
-      <h2>MPL Tournament Highlights</h2>
+      <h2><a> MPL Tournament Highlights </a></h2>
       <p>Click through some of the best moments in MPL history, from epic comebacks to championship-winning plays.</p>
 
       <div class="video-slides">
@@ -85,6 +84,44 @@
           <li>Events that raise disaster relief funds and support local communities</li>
         </ul>
       </section>
+
+      <section class="cta">
+        <h2>Be Part of the MLBB Legacy</h2>
+        <p>Whether you're battling in ranked mode or cheering in the grand finals, you're shaping the legacy of Mobile Legends. Share your story, join tournaments, or inspire your local community.</p>
+        <a href="reviews.html" class="cta-button">Share Your Experience</a>
+      </section>
+    </main>
+  
+    <footer>
+      <p>&copy; 2025 Mobile Legends Hub | website created by Miguel</p>
+    </footer>
+  
+    <script>
+      const videoUrls = [
+        "https://www.youtube.com/embed/F5RnuHODkDE?si=uoJfGPe7xNutypyn",
+        "https://www.youtube.com/embed/TNyL4Y42CMM?si=yZ5vDL1FVhjNKiRY&amp;start=25",
+        "https://www.youtube.com/embed/Ki3LiiGvsK8?si=Q4gRvYIltMQmfOOt"
+      ];
+  
+      let currentIndex = 0;
+      const iframe = document.getElementById("highlight-video");
+      const prevBtn = document.querySelector(".slides-controls button:first-child");
+      const nextBtn = document.querySelector(".slides-controls button:last-child");
+  
+      function updateVideo(index) {
+        iframe.src = videoUrls[index];
+      }
+  
+      prevBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + videoUrls.length) % videoUrls.length;
+        updateVideo(currentIndex);
+      });
+  
+      nextBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % videoUrls.length;
+        updateVideo(currentIndex);
+      });
+    </script>
 
 </body>
 </html>
