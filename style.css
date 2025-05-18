@@ -162,7 +162,7 @@
   
   /* Radiant Gradient Text */
   .mlbb-gradient-text {
-    background: linear-gradient(90deg, #f9d342, #ffdd57, #f9d342);
+    background: linear-gradient(90deg, #f9d342, #ffdd57, #f6d13b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
